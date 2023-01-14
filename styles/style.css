@@ -1,0 +1,89 @@
+/* Common styles */
+
+body {
+    background-color: rgb(250, 241, 226);
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    color: #727272;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    gap: 700px;
+    margin-left: 50px;
+    padding-left: 100px;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+/* Banner Design */
+
+.banner{
+    margin-bottom: 50px;
+}
+header, .banner {
+    background-color: white;
+}
+.banner-head {
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-description {
+    text-align: center;
+    margin: 100px 300px;
+    padding-top: 50px;
+}
+.btn-1 {
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.banner-img {
+    text-align: center;
+}
+
+/* Features Style */
+
+.features {
+    background-color: white;
+    display: flex;
+    padding: 80px 0 0 100px;
+}
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.features-description {
+    margin: 180px 160px 0 75px;
+}
+.features-description h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+/* Features Type Styles */
+
+.features-type {
+    background-color: white;
+    padding: 160px 200px 0 200px;
+}
+.features-type-head {
+    font-size: 45px;
+    font-weight: 700;
+    padding-left: 10px;
+    border-left: 5px solid #FF900E;
+    position: relative;
+    right: 20px;
+}
