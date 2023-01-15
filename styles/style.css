@@ -54,30 +54,36 @@ header, .banner {
     text-align: center;
 }
 
-/* Features Style */
+/* Features List Style */
 
-.features {
+.features-list {
     background-color: white;
     display: flex;
     padding: 80px 0 0 100px;
 }
-.features-img {
+.features-list-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
-.features-description {
+.features-list-description {
     margin: 180px 160px 0 75px;
 }
-.features-description h1 {
+.features-list-description h1 {
     font-weight: 700;
     font-size: 45px;
 }
 
 /* Features Type Styles */
 
+.features {
+    background-color: white;
+    display: flex;
+}
 .features-type {
     background-color: white;
-    padding: 160px 200px 0 200px;
+    padding: 160px 200px 0 100px;
 }
 .features-type-head {
     font-size: 45px;
@@ -86,4 +92,107 @@ header, .banner {
     border-left: 5px solid #FF900E;
     position: relative;
     right: 20px;
+}
+.btn-2 {
+    color: white;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 25px 35px;
+    position: relative;
+    bottom: 160px;
+    
+}
+.features-type-img img{
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+/* What We Do Styles */
+
+.what-we-do {
+    background-color: white;
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+.what-we-do img {
+    border-radius: 10px;
+    padding-left: 100px;
+    display: flex;
+    padding-bottom: 20px;
+}
+.what-we-do-head {
+    font-size: 45px;
+    font-weight: 700;
+}
+.what-we-do-description ul li {
+    list-style: disc;
+    font-weight: 700;
+}
+
+/* Facts Style */
+
+.facts {
+    background-color: white;
+    padding: 100px 600px 20px 100px;
+}
+.facts h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.awards {
+    background-color: white;
+    padding-top: 100px;
+}
+.buttons {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.button {
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.2s ease;
+}
+.button:hover {
+    background-color: wheat;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.sponsors-head {
+    font-size: 40px;
+    font-weight: 700;
+}
+.sponsors-description {
+    text-align: center;
+    margin: 0 500px;
+}
+.sponsors-img {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.ending {
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+    margin: 130px 50px 100px 50px;
+    background-color: wheat;
+    padding: 20px 400px;
+    border-radius: 5px;
 }
