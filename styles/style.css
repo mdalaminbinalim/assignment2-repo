@@ -13,7 +13,7 @@ p {
 header {
     display: flex;
     gap: 700px;
-    margin-left: 50px;
+    padding-left: 50px;
     padding-left: 100px;
 }
 nav ul {
@@ -61,6 +61,13 @@ header, .banner {
     display: flex;
     padding: 80px 0 0 100px;
 }
+.quick {
+    color: #727272;
+}
+.features-color {
+    color: #FF900E; 
+    display: block;
+}
 .features-list-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -100,10 +107,13 @@ header, .banner {
     border-radius: 8px;
     font-size: 45px;
     font-weight: 700;
-    padding: 25px 35px;
+    padding: 15px 35px;
     position: relative;
-    bottom: 160px;
+    bottom: 140px;
     
+}
+.experience {
+    font-size: 20px
 }
 .features-type-img img{
     margin-top: 200px;
@@ -118,11 +128,19 @@ header, .banner {
     display: flex;
     gap: 100px;
 }
+.color-of-what {
+    color: #727272;
+}
+.color-of-we {
+    color: #FF900E;
+}
 .what-we-do img {
     border-radius: 10px;
     padding-left: 100px;
     display: flex;
     padding-bottom: 20px;
+    width: 342px; 
+    height: 342px;
 }
 .what-we-do-head {
     font-size: 45px;
@@ -146,6 +164,15 @@ header, .banner {
 .awards {
     background-color: white;
     padding-top: 100px;
+}
+.award-quantity {
+    color: black; 
+    font-size: 20px; 
+    font-weight: 700;
+}
+.award-name {
+    font-size: 15px; 
+    font-weight: 700;
 }
 .buttons {
     display: flex;
@@ -195,4 +222,225 @@ footer {
     background-color: wheat;
     padding: 20px 400px;
     border-radius: 5px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 688px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+        
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        text-align: center;
+    }
+    .banner{
+        margin-bottom: 10px;
+    }
+    .banner-head {
+        font-size: 20px;
+    }
+    .banner-description {
+        text-align: center;
+        margin: 20px ;
+        padding-top: 20px;
+    }
+    .banner-p {
+        font-size: 16;
+    }
+    .btn-1 {
+        background-color: #FF900E;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .banner-img img{
+        text-align: center;
+        width: 350px;
+        height: 200px;
+    }
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0 50px;
+    }
+    .features-list-description p{
+        font-size: 13px;
+    }
+    .features-list-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .features-list-img img {
+        width: 150px;
+        height: 150px;
+    }
+    .features-list-description {
+        margin: 50px 10px 0 0;
+        text-align: center;
+    }
+    .features-list-description h1 {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+    .features {
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .features-type-img img{
+        margin-top: 100px;
+        margin-right: 50px;
+        width: 380px;
+        height: 500px;
+        margin-left: 10px;
+    }
+    .btn-2 {
+        color: white;
+        background-color: #FF900E;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 15px;
+        position: relative;
+        bottom: 65px;
+        
+    }
+    .experience {
+        font-size: 10px;
+    }
+    .features-type {
+        background-color: white;
+        padding: 30px 10px 0 10px;
+        margin: 0 10px;
+    }
+    .features-type-head {
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 20px;
+        border-left: 5px solid #FF900E;
+        position: relative;
+        right: 20px;
+    }
+    .what-we-do {
+        background-color: white;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .what-we-do img {
+        border-radius: 10px;
+        padding-left: 10px;
+        width: 170px;
+        height: 170px;
+        padding-bottom: 20px;
+    }
+    .what-we-do-img {
+        display: flex;
+        justify-content: center;
+    }
+    .what-we-do-head {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .what-we-do-description ul li {
+        list-style: disc;
+        font-weight: 700;
+    }
+    .facts {
+        background-color: white;
+        padding: 30px 10px 10px 10px;
+    }
+    .facts h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .awards {
+        background-color: white;
+        padding-top: 30px;
+        justify-content: center;
+    }
+    .award-quantity {
+        color: black; 
+        font-size: 15px; 
+        font-weight: 700;
+    }
+    .award-name {
+        font-size: 10px; 
+        font-weight: 700;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+        margin-left: 10px;
+    }
+    .button {
+        border: 2px solid #FF900E;
+        border-radius: 8px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 30px;
+        transition: transform 0.2s ease;
+    }
+    .button:hover {
+        background-color: wheat;
+        transform: scale(1.1) rotate(5deg);
+    }
+    footer {
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+    .sponsors-head {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .sponsors-description {
+        text-align: center;
+        margin: 60px 10px;
+    }
+    .sponsors-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .sponsors-img img {
+        width: 100px;
+        height: 30px;
+    }
+    .ending {
+        color: #424242;
+        font-size: 12px;
+        text-align: center;
+        margin: 150px 10px 30px 10px;
+        background-color: wheat;
+        padding: 15px 5px;
+        border-radius: 5px;
+    }
 }
